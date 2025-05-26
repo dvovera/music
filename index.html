@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>daniel's music</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet">
+  <style>
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background-color: #FFFBF4;
+    }
+
+    .bluenoise {
+      /* ... */
+      background:
+        linear-gradient(to right, oklch(91.7% 0.08 205.041), oklch(80.9% 0.105 251.813)),
+        url(https://grainy-gradients.vercel.app/noise.svg);
+    }
+
+    .greennoise {
+      /* ... */
+      background:
+        linear-gradient(to right, oklch(90.5% 0.093 164.15), oklch(92.5% 0.084 155.995)),
+        url(https://grainy-gradients.vercel.app/noise.svg);
+
+
+    }
+
+    .purplenoise {
+      /* ... */
+      background:
+        linear-gradient(to right, oklch(81.1% 0.111 293.571), oklch(71.4% 0.203 305.504)),
+        url(https://grainy-gradients.vercel.app/noise.svg);
+
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flex flex-col items-center pt-5">
+    <div class="max-w-md md:max-w-xl lg:max-w-4xl w-full mx-auto px-2">
+
+      <h1
+        class="mb-10 text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-[0.51em] md:leading-[0.51em] lg:leading-[0.51em]">
+        here are some of my
+        <span class="text-blue-400 ">
+          compositions
+        </span>.
+      </h1>
+
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 grid-rows-12 md:grid-rows-4 gap-6 auto-rows-[180px]">
+        <!-- video -->
+        <div class="bluenoise col-span-2 row-span-1 md:row-span-4 rounded-3xl p-6 flex flex-col justify-between">
+          <div>
+            <h2 class="text-xl mb-2 text-black font-extrabold tracking-tight">Love at First Light (2024)</h2>
+            <p>A piece I wrote for my sister's award-winning short film. If you want to see more
+              of her work go to your nearest McDonalds.</p>
+          </div>
+          <div class="w-full aspect-video rounded-lg overflow-hidden mt-2">
+            <iframe src="https://player.vimeo.com/video/973601421" frameborder="0"
+              allow="autoplay; fullscreen; picture-in-picture" allowfullscreen class="w-full h-full"
+              title="Vimeo video"></iframe>
+          </div>
+        </div>
+
+        <!-- clockwork -->
+        <div
+          class="bluenoise col-span-1 row-span-1 lg:row-span-2 rounded-3xl p-6 flex flex-col justify gap-2 justify-between">
+          <div>
+            <h2 class="text-xl mb-2 text-black font-extrabold tracking-tight">Clockwork (ULJUS 2nd Place)</h2>
+            <p class="mb-4">My original electronic composition was awarded second place in the
+              international ULJUS
+              composition competition in the respective category.</p>
+          </div>
+
+          <audio controls class="w-full rounded-lg mb-4">
+            <source src="src/Clockwork.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+          </audio>
+          <a href="https://uljus.com/en/composition-2023/" target="_blank" rel="noopener noreferrer"
+            class="w-1/2 bg-blue-900 hover:bg-blue-950 text-white font-semibold px-4 py-2 rounded-lg text-center transition">
+            check it out
+          </a>
+
+        </div>
+        <!-- Small Card -->
+        <div class="greennoise col-span-1 row-span-1  rounded-3xl p-6 flex flex-col justify-between ">
+          <div>
+            <h2 class="text-xl mb-2 text-black font-extrabold tracking-tight">Ode to Thomas Edison</h2>
+            <p class="mb-4 text-black">I made this when thinking about Thomas Edison.</p>
+          </div>
+          <audio controls class="w-full rounded-lg">
+            <source src="src/thomasedisonroleplay3.wav" type="audio/mp3">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+        <!-- Tall Card (1x2) -->
+        <div class="purplenoise col-span-1 row-span-1 rounded-3xl p-6 flex flex-col justify-between ">
+          <div>
+            <h2 class="text-xl mb-2 text-black font-extrabold tracking-tight">Pyramids</h2>
+            <p class="mb-4">Does winning carry the guilt of everyone who lost at your expense?</p>
+          </div>
+          <audio controls class="w-full rounded-lg">
+            <source src="src/Pyramids.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+  </div>
+</body>
+
+</html>
